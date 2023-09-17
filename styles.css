@@ -47,10 +47,6 @@ p {
 <-------------->      <-------------->        <-------------->
 */
 
-.Container-Logo {
-  width: 10%;
-  height: 70px;
-}
 .navbar {
   animation: animate-down 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0.15s
     backwards;
@@ -58,18 +54,26 @@ p {
   z-index: 1;
   top: 0;
   right: 0;
-  height: 70px;
+  /* height: 70px; */
   width: 100%;
   background-color: var(--back-grey);
 }
+
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: .5% 6%;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  display: inline;
+  /* width: 90%; */
+  /* display: inline; */
 }
+
+#icon {
+  width: 4em;
+  height: 3em;
+
+}
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -82,7 +86,7 @@ nav {
 .nav-links ul li a {
   color: var(--starkCol);
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 25px;
   font-size: 13px;
 }
 .nav-links ul li a:hover {
@@ -149,7 +153,7 @@ nav {
 .top-container h1 {
   animation: animate-down 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) backwards;
   padding-top: 7vw;
-  padding-bottom: 8vw;
+  padding-bottom: 9vw;
   font-size: 6vw;
   position: relative;
 }
