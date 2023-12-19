@@ -181,7 +181,8 @@ nav {
 .container-above-port {
   background-color: var(--darkGrey);
   padding: 0px 40px;
-  height: 50vw;
+  /* height: 40vw; */
+  height: fit-content;
 }
 .container-above-port p::first-letter {
   font-size: 6vw;
@@ -189,12 +190,12 @@ nav {
 }
 .container-above-port p {
   text-align: center;
-  padding: 14vw 3vw 0vw;
-  font-size: 3.4vw;
+  padding: 4vw 2.5vw 0vw;
+  font-size: 3.2vw;
   line-height: 160%;
 }
 .container-above-port h2 {
-  padding: 14vw 70px 10px;
+  padding: 8vw 70px 0px 0px;
   font-size: 4vw;
 }
 
@@ -272,7 +273,7 @@ footer {
   padding: 140px 8% 3% 8%;
   position: relative;
   background-color: var(--back-main);
-  height: 400px;
+  height: 350px;
 }
 footer .quote {
   text-align: center;
@@ -283,7 +284,7 @@ footer .quote {
 }
 .contact div {
   display: inline-block;
-  width: 33%;
+  width: 32%;
   text-align: center;
 }
 .contact div a {
@@ -332,7 +333,7 @@ footer .quote {
     font-size: 4vw;
   }
   .portfolio {
-    height: 1100px;
+    height: 1300px;
   }
   .Portfolio-Img-Container {
     width: 100%;
@@ -343,6 +344,7 @@ footer .quote {
   }
   .separate-portfolio .Portfolio-Img-Container {
     width: 100%;
+    float: none;
   }
 }
 
