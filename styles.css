@@ -354,13 +354,13 @@ footer .quote {
 <-------------->      <-------------->        <-------------->
 */
 .simple-about-me {
-  height: 1200px;
+  height: 100vh;
   background-color: var(--back-main);
 }
 .simple-about-me h2 {
   animation: animate-up 0.6s cubic-bezier(0.7, 0.935, 0.15, 1);
-  padding: 200px 220px;
-  font-size: 4.5em;
+  padding: 16% 18%;
+  font-size: 4em;
   text-align: left;
   line-height: 150%;
 }
@@ -389,6 +389,13 @@ footer .quote {
   padding: 2vw 0vw 0vw;
   text-decoration: none;
   color: red;
+}
+
+@media only screen and (max-width: 760px) {
+  .simple-about-me h2 {
+    font-size: 3em;
+    padding: 40% 10%;
+  }
 }
 
 /*background-size:cover;(incredibly useful for making an image cover only the
