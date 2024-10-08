@@ -220,12 +220,12 @@ nav {
 }
 
 .Portfolio-Img-Container {
-  width: 33.3%;
+  width: 50%;
   position: relative;
   float: left;
 }
 .separate-portfolio .Portfolio-Img-Container {
-  width: 33.3%;
+  width: 50%;
 }
 
 .Portfolio-Img-Container:hover .portfolio-overlay {
