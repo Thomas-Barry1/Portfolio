@@ -2,95 +2,184 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="keywords"
-      content="Gap Year Front End Web Devlopment HTML CSS Javascript French"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Thomas Barry - DevOps Engineer & Full Stack Developer" />
+    <meta name="keywords" content="DevOps, Full Stack, Web Development, AWS, Docker, Python" />
     <meta name="author" content="Thomas Barry" />
-    <meta
-      name="description"
-      content="This is a website that details everything I've done over the course of my Gap Year. It talks about my coding projects and everything I've done"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About</title>
+    <title>About - Thomas Barry</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <section class="navbar">
-      <nav>
-        <div>
-          <a href="index.html"
-            ><img id="icon" src="Images/Icons/1.png" alt="Logo for Website"
-          /></a>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="Images/Icons/1.png" alt="Thomas Barry Logo" />
+          </a>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <!-- <li><a href="Projects.html">PROJECTS</a></li> -->
-            <li id="active-nav-link"><a href="About.html">ABOUT</a></li>
-          </ul>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="About.html" class="nav-link active">About</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
         </div>
-      </nav>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero-content">
+          <h1 class="about-hero-title">
+            I'm A <span class="gradient-text">Software Engineer</span> & 
+            <span class="gradient-text">Full Stack Developer</span>
+          </h1>
+          <p class="about-hero-subtitle">
+            Passionate about building scalable solutions and automating complex workflows
+          </p>
+        </div>
+      </div>
     </section>
-    <main>
-      <div class="simple-about-me">
-        <h2>I'm A Software Engineer & Fullstack Web Developer</h2>
-      </div>
-      <div class="about-me">
-        <h1>About Me</h1>
-        <p>
-          As a DevOps Engineer with a strong focus on automation and
-          infrastructure as code (IAC), I have successfully deployed solutions
-          that enhance security, efficiency, and scalability. I take pride in
-          designing and implementing systems that streamline workflows while
-          improving product performance. For instance, I recently led the
-          deployment of an antivirus scanning solution with a 100% scan success
-          rate, iteratively improving the process to reduce scan time by 90x.
-          These improvements ensured faster, more secure operations while
-          meeting stringent security protocols.
-        </p>
-        <p>
-          I excel at tackling complex cloud-architected environments,
-          modernizing them with best practices in DevOps. One of my recent
-          projects involved transforming a poorly coded website by transitioning
-          it to Terraform, modularizing the code, and enhancing the user
-          experience. The result was not only a vastly improved UI/UX but also
-          highly positive feedback from users. My expertise in AWS services,
-          combined with tools like Docker and Python, allows me to deliver
-          high-performance solutions that scale efficiently.
-        </p>
-        <p>
-          In addition to my professional experience, I actively explore personal
-          projects that drive my passion for full-stack development and AI. I
-          built an AI-driven application designed to assist teachers with
-          tailored lesson planning, using cutting-edge technologies like Angular
-          and NodeJS. This hands-on experience complements my DevOps expertise
-          and reflects my commitment to continuous learning and innovation in
-          the field.
-        </p>
-        <a class="resume" href="Resume - Thomas Barry.pdf" download>
-          My Resume
-        </a>
-      </div>
-    </main>
-    <footer>
-      <div class="box-above-footer">Contact Me</div>
-      <div class="quote">
-        Always lose gracefully, solve problems passionately, live fearlessly.
-      </div>
-      <div class="contact">
-        <div class="LinkedIn">
-          <a href="https://www.linkedin.com/in/thomas-barry1/" target="_blank"
-            >LinkedIn</a
-          >
+
+    <!-- About Content -->
+    <section class="about-content">
+      <div class="container">
+        <div class="about-hero-image">
+          <img src="Images/Bell Tower Pic.jpeg" alt="UNC Chapel Hill Bell Tower" />
         </div>
-        <div class="GitHub">
-          <a href="https://github.com/Thomas-Barry1" target="_blank">Github</a>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <div class="about-paragraphs">
+            <p>
+              As a DevOps Engineer with a strong focus on automation and infrastructure as code (IAC), 
+              I have successfully deployed solutions that enhance security, efficiency, and scalability. 
+              I take pride in designing and implementing systems that streamline workflows while improving 
+              product performance. For instance, I recently led the deployment of an antivirus scanning 
+              solution with a 100% scan success rate, iteratively improving the process to reduce scan 
+              time by 90x. These improvements ensured faster, more secure operations while meeting 
+              stringent security protocols.
+            </p>
+            <p>
+              I excel at tackling complex cloud-architected environments, modernizing them with best 
+              practices in DevOps. One of my recent projects involved transforming a poorly coded website 
+              by transitioning it to Terraform, modularizing the code, and enhancing the user experience. 
+              The result was not only a vastly improved UI/UX but also highly positive feedback from users. 
+              My expertise in AWS services, combined with tools like Docker and Python, allows me to deliver 
+              high-performance solutions that scale efficiently.
+            </p>
+            <p>
+              In addition to my professional experience, I actively explore personal projects that drive 
+              my passion for full-stack development and AI. I built an AI-driven application designed to 
+              assist teachers with tailored lesson planning, using cutting-edge technologies like Angular 
+              and NodeJS. This hands-on experience complements my DevOps expertise and reflects my 
+              commitment to continuous learning and innovation in the field.
+            </p>
+          </div>
+          <div class="about-actions">
+            <a href="Resume - Thomas Barry.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              Download Resume
+            </a>
+          </div>
         </div>
-        <div class="Email">
-          <a href="mailto:lagaba@live.unc.edu">Email</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <p>Technologies and tools I work with</p>
         </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend & Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-text">
+            <h2>Let's Work Together</h2>
+            <p class="contact-quote">
+              "Always lose gracefully, solve problems passionately, live fearlessly."
+            </p>
+            <p>I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/thomas-barry1/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Thomas-Barry1" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:lagaba@live.unc.edu" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Thomas Barry. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

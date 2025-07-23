@@ -1,134 +1,216 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="keywords"
-      content="Gap Year Front End Web Devlopment HTML CSS Javascript French"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thomas Barry - DevOps Engineer & Full Stack Developer Portfolio" />
+    <meta name="keywords" content="DevOps, Full Stack, Web Development, AWS, Docker, Python" />
     <meta name="author" content="Thomas Barry" />
-    <meta
-      name="description"
-      content="This is a website that details everything I've done over the course of my Gap Year. It talks about my coding projects and everything I've done"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page of TGapYear</title>
+    <title>Thomas Barry - DevOps Engineer & Developer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <section class="navbar">
-      <nav>
-        <div>
-          <a href="index.html"
-            ><img id="icon" src="Images/Icons/1.png" alt="Logo for Website"
-          /></a>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li id="active-nav-link"><a href="index.html">HOME</a></li>
-            <!-- <li><a href="Projects.html">PROJECTS</a></li> -->
-            <li><a href="About.html">ABOUT</a></li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-    <main id="content">
-      <div class="container-and-pic">
-        <img
-          class="PicOfMe"
-          src="Images/PicOfMe.jpg"
-          alt="A picture of my face"
-        />
-        <div class="top-container">
-          <h1 class="main-heading">PORTFOLIO</h1>
-          <h2>Hi, I'm Thomas, nice to meet you.</h2>
-          <p class="about-gap-year">
-            I am Devops developer/engineer and graduate from the University of
-            North Carolina at Chapel Hill.
-          </p>
-          <img src="Images/Bell Tower Pic.jpeg" alt="UNC Bell Tower" />
-        </div>
-      </div>
-      <div class="container-above-port">
-        <p>
-          Over the years, I've improved my web and full stack development
-          skills, coded in higher level programming languages such as Java and
-          Python, and continuously built projects along the way.
-        </p>
-        <h2>These are my best personal projects:</h2>
-      </div>
-      <div class="portfolio">
-        <div class="Portfolio-Img-Container">
-          <a href="https://teach.webexpansions.com/home"
-            ><img
-              src="Images/LectureHall.jpg"
-              alt="Empty lecture hall for school"
-            />
-            <div class="portfolio-overlay">
-              <div class="text">TeachGenie Ai Tool</div>
-            </div></a
-          >
-        </div>
-        <div class="Portfolio-Img-Container">
-          <a href="https://webexpansions.com"
-            ><img
-              src="Images/Finances.jpg"
-              alt="Man handling finances and taking out money"
-            />
-            <div class="portfolio-overlay">
-              <div class="text">Finance Website</div>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="Images/Icons/1.png" alt="Thomas Barry Logo" />
           </a>
         </div>
-        <div class="separate-portfolio">
-          <div class="Portfolio-Img-Container">
-            <a href="https://www.youtube.com/watch?v=rqc67Inmcds"
-              ><img
-                src="Images/Docker.png"
-                alt="Image of Ship with Containers"
-              />
-              <div class="portfolio-overlay">
-                <div class="text">XL Labs Statistics Feature</div>
-              </div></a
-            >
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="About.html" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="gradient-text">DevOps Engineer</span>
+              <br>& Full Stack Developer
+            </h1>
+            <p class="hero-subtitle">
+              I build scalable, secure, and efficient solutions that drive business growth. 
+              Specializing in cloud architecture, automation, and modern web development.
+            </p>
+            <div class="hero-buttons">
+              <a href="About.html" class="btn btn-primary">Learn More</a>
+              <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
           </div>
-          <div class="Portfolio-Img-Container">
-            <a href="About.html"
-              ><img
-                src="Images/AboutPortfolio.jpeg"
-                alt="Bookshelves in Bookstore"
-              />
-              <div class="portfolio-overlay">
-                <div class="text">More About Me</div>
-              </div></a
-            >
+          <div class="hero-image">
+            <img src="Images/PicOfMe.jpg" alt="Thomas Barry" />
+            <div class="hero-image-bg"></div>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="box-above-footer">Contact Me</div>
-      <div class="quote">
-        Always lose gracefully, solve problems passionately, live fearlessly.
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-content">
+          <h2>Turning Ideas Into Reality</h2>
+          <p>
+            With expertise in AWS, Docker, Python, and modern web technologies, 
+            I've successfully deployed solutions that enhance security, efficiency, and scalability. 
+            From automating complex workflows to building AI-driven applications, 
+            I'm passionate about creating technology that makes a difference.
+          </p>
+        </div>
       </div>
-      <div class="contact">
-        <div class="LinkedIn">
-          <a href="https://www.linkedin.com/in/thomas-barry1/" target="_blank"
-            >LinkedIn</a
-          >
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>Here are some of my recent works that showcase my skills and passion</p>
         </div>
-        <div class="GitHub">
-          <a href="https://github.com/Thomas-Barry1" target="_blank">Github</a>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Images/LectureHall.jpg" alt="TeachGenie AI Tool" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://teach.webexpansions.com/home" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>TeachGenie AI Tool</h3>
+              <p>AI-driven application designed to assist teachers with tailored lesson planning using Angular and NodeJS.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">AI/ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Images/Finances.jpg" alt="Finance Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://webexpansions.com" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Finance Website</h3>
+              <p>Modern financial platform with enhanced user experience and robust backend infrastructure.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Images/Docker.png" alt="XL Labs Statistics Feature" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://www.youtube.com/watch?v=rqc67Inmcds" target="_blank" class="project-link">
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>XL Labs Statistics Feature</h3>
+              <p>Advanced analytics and statistics platform with containerized deployment and automated scaling.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Images/AboutPortfolio.jpeg" alt="More About Me" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="About.html" class="project-link">
+                    <i class="fas fa-user"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>About Me</h3>
+              <p>Learn more about my background, skills, and professional journey in technology.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Portfolio</span>
+                <span class="tech-tag">Personal</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="Email">
-          <a href="mailto:thomasbarry594@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-text">
+            <h2>Let's Work Together</h2>
+            <p class="contact-quote">
+              "Always lose gracefully, solve problems passionately, live fearlessly."
+            </p>
+            <p>I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/thomas-barry1/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Thomas-Barry1" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:thomasbarry594@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Thomas Barry. All rights reserved.</p>
       </div>
     </footer>
-    <!-- .clearfix::after {
-  content: "";
-  clear: both;
-  display: table; Use this to make images that float to the left or right of text not overflow in weird ways. The containing paragraph will overflow and line up with the image.-->
-    -->
+
+    <script src="script.js"></script>
   </body>
 </html>
