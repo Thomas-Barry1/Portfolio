@@ -348,11 +348,16 @@ body {
   box-shadow: var(--shadow-lg);
   transition: all var(--transition-normal);
   animation: fadeInUp 0.8s ease-out;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-image {
@@ -390,13 +395,13 @@ body {
   opacity: 1;
 }
 
-.project-link {
+.project-links i {
   color: white;
   font-size: var(--font-size-2xl);
   transition: transform var(--transition-fast);
 }
 
-.project-link:hover {
+.project-card:hover .project-links i {
   transform: scale(1.2);
 }
 
